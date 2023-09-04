@@ -1,0 +1,114 @@
+section {
+    background-color:cyan;
+}
+header {
+    background-color: coral;
+}
+.content-content-box{
+    background-color: green;
+    width: 300px;
+    margin: 30px;
+    border: 10px solid violet;
+}
+footer {
+    background-color: blueviolet;
+}
+body {
+    background-color: black;
+}
+.introCss {
+    background-color:white;
+}
+#myp {
+    font-size: 24px;
+}
+.myp {
+    font-size: 30px;
+}
+.color-rojo{
+    color: red;
+
+}
+.back-azul{
+    background-color: blue;
+}
+.contenedor {
+    background-color: violet;
+    margin: 50px;
+    padding: 10px;
+    border: 5px solid red;
+}
+
+.contenido{
+    background-color: aquamarine;
+}
+.contenedor-con-imagen{
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: cadetblue;
+    background-image: url("/public/Mario-bros.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.contenido-con-imagen{
+    background-color: white;
+
+}
+
+span{
+    font-weight: bold;
+}
+p,span{
+    color: darkviolet;
+}
+
+main p {
+    background-color: aquamarine;
+}
+main >section > article> div > p {
+    font-size: 15px;
+}
+h1 + p {
+    color:red;
+}
+.container > .content > p {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.content > h3 {
+    background-color: bisque;
+    font: bold 30px Arial, sans-serif;
+    text-align: center;
+}
+.midiv {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(143, 143, 163);
+}
+.div-in-mydiv{
+    background-color: rgba(255,255, 255, 0.6);
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    
+}
+.tamano{
+    height: 400px;
+    width: 400px;
+    background-color: black;
+}
+.tamano-hijo{
+    height: 25vh;
+    width: 25vh;
+    background-color:red;
+    
+}
