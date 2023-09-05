@@ -112,3 +112,107 @@ h1 + p {
     background-color:red;
     
 }
+.punto{
+    height: 10pt;
+    width: 10pts;
+    background-color: blueviolet;
+}
+
+.div-rem{
+    height: 15rem;
+    width: 20rem;
+}
+.div-em{
+    height: 15em;
+    width: 20em;
+    overflow: scroll;
+}
+.contenedor-bordes > div {
+    height: 100px;
+    width: 100px;
+    border-color: green;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.borde-1{
+    border-style: dashed;
+}
+
+.borde-2 {
+    border-style: groove;
+}
+
+.borde-en-una-linea {
+    border: 1px solid red;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    align-items: start;
+    flex-flow: row wrap;
+}
+/* 
+ 1 - flex-direction : define en que dirección se distribuiran los elementos dentro del contenedor
+ - column
+ - column-reverse
+ - row
+ - row-reverse
+
+ 2- flex-wrap: define si que los elementos dentro del contenedor puedan saltar a la siguiente fila o columna
+ - wrap
+ - nowrap
+
+ 3- fex-flow : Es una combinacion de las propiedades flex-directio y flex-wrap
+
+ 4- justify-conetnt : para alinear el contenido
+ - star
+ - center
+ - end
+ - flex-start
+ - flex-center
+ - flex-end
+
+ 5- align-items : se usa para alinear en vertical los elementos dentro del contenedor
+ - center
+ - start
+ - end
+ - stretch
+ - baseline
+ 
+
+  */
+
+.flex-container>div {
+    margin: 10px;
+    background-color: chocolate;
+    padding: 20px;
+    text-align: center;
+    line-height: 70px;
+
+}
+.contenedor-perfecto{
+    display: flex;
+    background-color: aqua;
+    height: 40vh;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contenido-perfecto{
+    display: flex;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+}
