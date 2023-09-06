@@ -1,5 +1,5 @@
 section {
-    background-color:cyan;
+    background-color: white;
 }
 header {
     background-color: coral;
@@ -66,7 +66,7 @@ p,span{
 }
 
 main p {
-    background-color: aquamarine;
+    background-color: white;
 }
 main >section > article> div > p {
     font-size: 15px;
@@ -251,4 +251,88 @@ h1 + p {
 .flex-container-3> div:nth-child(3){
     flex-basis: 400px;
 
+}
+.container-grid {
+    display: grid; 
+    
+   
+}
+.item{
+    background-color: white;
+    color: violet;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.grid-columns{
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.grid-rows {
+    grid-template-rows: 1fr 50% 1fr ;
+}
+
+.grid-rows-columns{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.primero {
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.estructura{
+    display: grid;
+    height: 100vh;
+    width: 100vh;
+    grid-template-areas: 
+     "_header _header"
+     "_sidelbar _main"
+     "_footer _footer";
+     grid-template-rows: 80px 1fr 80px;
+     grid-template-columns: 1fr 2fr;
+   
+}
+._header{
+    grid-area: _header;
+    background-color: bisque;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+._sidelbar{
+    grid-area: _sidelbar;
+    background-color: green;
+    border-right: 2px solid;
+}
+._main{
+    grid-area:_main ;
+    background-color: brown;
+}
+._footer{
+    grid-area: _footer;
+    background-color: violet;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.responsive{
+    display: grid;
+    grid-template-columns: minmax(100px);
+}
+
+.responsivo{
+    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1000px));
+    padding: 15px;
+    border: 1px solid black;
+    gap: 15px;
+}
+
+.responsivo>div{
+    background-color: cadetblue;
+    color: black;
+    padding: 30px;
+    margin: 10px; 
+    
 }
