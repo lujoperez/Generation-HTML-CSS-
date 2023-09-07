@@ -336,3 +336,71 @@ h1 + p {
     margin: 10px; 
     
 }
+/* intro js*/
+.introjs {
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-areas: "header_" "main_" "footer_";
+    min-height: 100vh;
+    margin: 0;
+  }
+  .header_ {
+    display: flex;
+    grid-area: header_;
+    background-color: #333;
+    color: #fff;
+  }
+  .header_ > h1 {
+    display: block;
+    line-height: 70px;
+    margin: auto 20px;
+  }
+  .main_ {
+    grid-area: main_;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    padding: 20px;
+    background-color: beige;
+  }
+  .containerjs {
+    border-right: 1px solid #ddd;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto ;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0 , 0 , 0.3);
+  }
+  .card > input [type="number"],
+  .card > input [type="text"] {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    border: 1 solid whitesmoke;
+    border-radius: 3px ;
+  }
+  .card > button {
+    margin: auto;
+    width: 90%;
+    padding: 10px; 
+    background-color: blue;
+    color: azure;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .footer_ {
+    grid-area: footer_;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  .footer_ > p {
+    font-size: 20px;
+    color: #fff;
+  }
